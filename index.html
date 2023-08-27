@@ -36,6 +36,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <main>
@@ -82,7 +85,7 @@
         <div class="container">
           <h1 class="section-title">Projects</h1>
           <div class="projects-content m-top">
-            <div class="project-box">
+            <div class="project-box pb-1">
               <a
                 href="https://astroship-tau-one.vercel.app/"
                 target="_blank"
@@ -110,7 +113,7 @@
                 </div>
               </div>
             </div>
-            <div class="project-box">
+            <div class="project-box pb-2">
               <a
                 href="https://ataturk-tribute-page.vercel.app"
                 target="_blank"
@@ -141,7 +144,7 @@
                 </div>
               </div>
             </div>
-            <div class="project-box">
+            <div class="project-box pb-3">
               <a
                 href="https://onepagelove-templates-copy.vercel.app"
                 target="_blank"
@@ -176,25 +179,25 @@
         <div class="container">
           <h1 class="section-title">Skills</h1>
           <div class="skills-wrapper m-top">
-            <div class="skill">
+            <div class="skill s-1">
               <div class="skill-img">
                 <img src="images/skills/html5.svg" alt="HTML" />
               </div>
               <h2>HTML</h2>
             </div>
-            <div class="skill">
+            <div class="skill s-2">
               <div class="skill-img">
                 <img src="images/skills/css3-alt.svg" alt="CSS" />
               </div>
               <h2>CSS</h2>
             </div>
-            <div class="skill">
+            <div class="skill s-3">
               <div class="skill-img">
                 <img src="images/skills/js.svg" alt="JS" />
               </div>
               <h2>JAVASCRIPT</h2>
             </div>
-            <div class="skill">
+            <div class="skill s-4">
               <div class="skill-img">
                 <img src="images/skills/sass.svg" alt="SASS" />
               </div>
@@ -214,14 +217,14 @@
             <input
               type="text"
               name="full-name"
-              class="full-name"
+              class="full-name f-1"
               required
               placeholder="Full Name"
             />
             <input
               type="email"
               name="email"
-              class="email"
+              class="email f-2"
               required
               placeholder="Email"
             />
@@ -230,12 +233,92 @@
               id="msg"
               placeholder="Your Message"
               required
-              class="message"
+              class="message f-3"
             ></textarea>
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn f-4">Submit</button>
           </form>
         </div>
       </section>
     </main>
+
+    <script>
+      ScrollReveal().reveal(".logo", {
+        delay: 300,
+        distance: "30px",
+        origin: "left",
+      });
+      ScrollReveal().reveal(".section-title", {
+        delay: 300,
+        distance: "30px",
+        origin: "left",
+        reset: true,
+      });
+      ScrollReveal().reveal(".pb-1", {
+        delay: 600,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+      });
+      ScrollReveal().reveal(".pb-2", {
+        delay: 700,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+      });
+      ScrollReveal().reveal(".pb-3", {
+        delay: 800,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+      });
+      ScrollReveal().reveal(".s-1", {
+        delay: 500,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+      });
+      ScrollReveal().reveal(".s-2", {
+        delay: 600,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+      });
+      ScrollReveal().reveal(".s-3", {
+        delay: 700,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+      });
+      ScrollReveal().reveal(".s-4", {
+        delay: 800,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+      });
+      ScrollReveal().reveal(".f-1", {
+        delay: 500,
+        distance: "50px",
+        origin: "left",
+        reset: true,
+      });
+      ScrollReveal().reveal(".f-2", {
+        delay: 600,
+        distance: "50px",
+        origin: "left",
+        reset: true,
+      });
+      ScrollReveal().reveal(".f-3", {
+        delay: 700,
+        distance: "50px",
+        origin: "left",
+        reset: true,
+      });
+      ScrollReveal().reveal(".f-4", {
+        delay: 800,
+        distance: "50px",
+        origin: "left",
+        reset: true,
+      });
+    </script>
   </body>
 </html>
