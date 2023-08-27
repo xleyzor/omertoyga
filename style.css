@@ -340,14 +340,22 @@ section.projects {
     align-items: center;
     justify-content: center;
   }
-  header .container {
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
+  .form {
+    width: 100%;
+  }
+
   .form input,
   .form textarea,
   .submit-btn {
     font-size: 1rem;
+  }
+  .section-title {
+    text-align: center;
   }
 }
