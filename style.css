@@ -345,4 +345,8 @@ section.projects {
     align-items: center;
     justify-content: center;
   }
+  .form input,
+  .form textarea {
+    font-size: 1rem;
+  }
 }
