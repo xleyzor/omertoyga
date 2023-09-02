@@ -469,6 +469,7 @@ main {
   cursor: pointer;
   transition: 0.3s all ease;
   color: var(--gray);
+  user-select:none;
 }
 
 .skills-container .skill-box i:hover {
