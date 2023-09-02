@@ -476,83 +476,6 @@ main {
   transform: translateY(-20px);
 }
 
-.contact-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 6rem;
-}
-
-form {
-  max-width: 1000px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-.input-div {
-  position: relative;
-  width: 100%;
-}
-
-.input-div label {
-  position: absolute;
-  font-size: 1.2rem;
-  color: var(--light-turqoise);
-  background-color: var(--black);
-  top: -15px;
-  left: 10px;
-  padding: 0 1rem;
-  z-index: 10;
-}
-
-.input-div input,
-textarea {
-  width: 100%;
-  padding: 1rem;
-  resize: none;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  border: 1px solid var(--light-turqoise);
-  border-radius: 10px;
-  font-size: 1.2rem;
-  color: var(--white);
-}
-
-.input-div textarea {
-  height: 100%;
-}
-
-.submit-btn {
-  cursor: pointer;
-  background-color: var(--light-turqoise);
-  font-size: 1.5rem;
-  border-radius: 10px;
-  transition: 0.3s all ease;
-}
-.submit-btn:hover {
-  background-color: transparent;
-  color: var(--light-turqoise);
-}
-
-.inputs {
-  display: flex;
-  gap: 50px;
-  width: 100%;
-}
-
-.main-inputs {
-  flex-direction: column;
-  display: flex;
-  gap: 50px;
-  width: 100%;
-}
-
 @keyframes scrollDown {
   0% {
     transform: translateY(0%);
@@ -694,6 +617,51 @@ header {
   display: flex;
 }
 
+.contact .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.contact .title-box .title::after {
+  content: "";
+  width: 25%;
+  height: 5px;
+  background-color: var(--light-turqoise);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.contact-container a {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--main-turqoise);
+  height: 150px;
+  border: 1px solid var(--main-turqoise);
+  box-shadow: 0.1px 0.1px 20px var(--main-turqoise);
+  font-size: 1.3rem;
+}
+
+.contact-container a:hover {
+  background-color: var(--main-turqoise);
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -724,10 +692,6 @@ header {
 }
 
 @media (max-width: 600px) {
-  .inputs {
-    display: flex;
-    flex-direction: column;
-  }
   .name {
     font-size: 3rem;
   }
@@ -745,9 +709,7 @@ header {
     height: 200px;
     background-size: cover;
   }
-  .input-div textarea {
-    height: 250px;
-  }
+
   .hero .container {
     max-width: 100%;
   }
