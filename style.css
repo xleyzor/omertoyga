@@ -729,4 +729,7 @@ header {
   .skills-container .skill-box i {
     font-size: 5rem;
   }
+    .small-title {
+    font-size: 0.8rem;
+  }
 }
