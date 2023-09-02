@@ -660,6 +660,7 @@ header {
 .contact-container a:hover {
   background-color: var(--main-turqoise);
   color: #fff;
+  transform: scale(0.9);
 }
 
 @media (max-width: 768px) {
